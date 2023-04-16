@@ -837,7 +837,8 @@ PlayerSettings:
   webGLDataCaching: 0
   webGLDebugSymbols: 1
   webGLEmscriptenArgs: ' --profiling-funcs -s ALLOW_MEMORY_GROWTH=1 -s MAXIMUM_MEMORY=4GB
-    -s ALLOW_MEMORY_GROWTH=1 -s MAXIMUM_MEMORY=4GB -s ALLOW_MEMORY_GROWTH=1 -s MAXIMUM_MEMORY=4GB '
+    -s ALLOW_MEMORY_GROWTH=1 -s MAXIMUM_MEMORY=4GB -s ALLOW_MEMORY_GROWTH=1 -s MAXIMUM_MEMORY=4GB
+    -s ALLOW_MEMORY_GROWTH=1 -s MAXIMUM_MEMORY=4GB '
   webGLModulesDirectory: 
   webGLTemplate: PROJECT:decentraland
   webGLAnalyzeBuildSize: 1

@@ -19,7 +19,7 @@ const PROD = !!process.env.CI
 
 console.log(`production: ${PROD}`)
 process.env.BUILD_PATH = path.resolve(
-  process.env.BUILD_PATH || path.resolve(__dirname, '../Builds/unity')
+  process.env.BUILD_PATH || path.resolve(__dirname, '../../../builds/unity')
 )
 const DIST_PATH = path.resolve(__dirname, './static')
 
@@ -28,7 +28,7 @@ async function main() {
   await copyBuiltFiles()
   await createPackageJson()
   await compileJs()
-  await customCopyStaticDirectory()
+  // await customCopyStaticDirectory()
 }
 
 async function customCopyStaticDirectory() {
@@ -58,8 +58,11 @@ async function copyBuiltFiles() {
     copyFile(file, path.resolve(streamingDistPath, file.replace(streamingPath + '/', './')))
   }
 
-  const gameJSPath = path.resolve(process.env.BUILD_PATH, 'game.js')
-  copyFile(gameJSPath, path.resolve(DIST_PATH, 'game.js'))
+  // I have no idea what this game.js file is actually for
+    // const gameJSPath = path.resolve(process.env.BUILD_PATH, 'game.js')
+    // copyFile(gameJSPath, path.resolve(DIST_PATH, 'game.js'))
+
+  
 }
 
 /**
