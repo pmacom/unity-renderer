@@ -101,3 +101,16 @@ packages/shared/apis/proto/*.ts
 lsall
 *.gen.ts
 static/index.js.map
+
+public/empty-scenes/common/EP_01/package-lock.json
+public/empty-scenes/common/EP_02/package-lock.json
+public/empty-scenes/common/EP_03/package-lock.json
+public/empty-scenes/common/EP_04/package-lock.json
+public/empty-scenes/common/EP_05/package-lock.json
+public/empty-scenes/common/EP_06/package-lock.json
+public/empty-scenes/common/EP_07/package-lock.json
+public/empty-scenes/common/EP_08/package-lock.json
+public/empty-scenes/common/EP_09/package-lock.json
+public/empty-scenes/common/EP_10/package-lock.json
+public/empty-scenes/common/EP_11/package-lock.json
+public/empty-scenes/common/EP_12/package-lock.json
