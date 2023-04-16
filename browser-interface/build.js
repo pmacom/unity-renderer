@@ -28,6 +28,15 @@ async function main() {
   await copyBuiltFiles()
   await createPackageJson()
   await compileJs()
+  await customCopyStaticDirectory()
+}
+
+async function customCopyStaticDirectory() {
+  if(!process.env.CUSTOM_CLONE_STATIC_OUTPUT_TO_PATH) return
+  const staticDirectory = path.resolve(__dirname, './static')
+  const buildDirectory = path.resolve(__dirname, process.env.CUSTOM_CLONE_STATIC_OUTPUT_TO_PATH )
+  console.log({ staticDirectory, buildDirectory })
+  await fse.copy(staticDirectory, buildDirectory)
 }
 
 // This function copies the built files from unity into the target folder
